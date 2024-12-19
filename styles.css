@@ -1,0 +1,245 @@
+:root {
+    --orange: #FF6A00; /* Key elements like buttons or headers */
+    --yellow: #FFC300; /* Highlights and accents */
+    --red: #FF4500; /* Alerts or calls to action */
+    --gray: #3C3C3C; /* Subtle backgrounds or dividers */
+    --white: #F5F5F5; /* Text and secondary content */
+    --black: #000000; /* Main background */
+  }
+
+  
+@font-face {
+    font-family: 'myfont';
+    src: url("font/Enjoyable.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+  
+
+#date-time {
+  text-align: center;
+  color: var(--yellow);
+  font-family: 'myfont', sans-serif;
+  border:var(--yellow) 3px solid;
+  border-radius: 30px;
+  margin: 15px 0;
+  padding: 1px;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+  #date-time p {
+    margin: 2px;
+    padding: 5px;
+    
+  }
+   
+  #current-time {
+    color: var(--orange);
+  }
+
+  
+.siteheading {
+    font-family: myfont;
+    color: var(--yellow);
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px var(--red);
+    font-size: 60px;
+}
+
+.duck {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 4px var(--red));
+}
+
+header {
+    text-align: center;
+}
+.topheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+   
+}
+
+nav a {
+    text-decoration: none;
+ 
+    color: var(--yellow);
+    font-weight: bold;
+    box-shadow: 2px 2px 6px var(--red);
+    padding: 12px 30px;
+    border-radius: 20px;
+    
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: var(--gray);
+}
+
+
+body {
+    font-family: myfont;
+    background-color: black;
+    color: var(--yellow);
+    margin: 15px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+ gap: 20px;
+}
+
+/**section 1 style**/
+
+.duckwithbook {
+    width:150px;
+    height: auto;
+    background-image: url("../images/duckbook.png");
+}
+
+
+
+.section1 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: #FF4500 2px 2px 6px;
+    border-radius: 30px;
+    width: 800px;
+    height: auto;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 600px) {
+    .section1 {
+        width: 90%;
+    }
+    
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row; /* Align paragraphs side by side */
+    gap: 25px;
+}
+
+
+.section1heading {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--red);
+    color: var(--orange);
+    margin: auto;
+}
+
+/**section 2 style login section**/
+
+.section2list {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.section2list li a {
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: bold;
+    box-shadow: 2px 2px 6px var(--red);
+    padding: 12px 30px;
+    border-radius: 20px;
+}
+
+#getstarted a {
+    background:linear-gradient(0deg, var(--red), var(--yellow));
+    transition: background-color 0.3s ease;
+    color: var(--white);
+    text-shadow: 2px 2px 4px var(--gray);
+}
+
+.section2list li a:hover {
+    background-color: var(--gray);
+}
+#getstarted a:hover {
+    background: var(--gray);
+}
+
+/**section 3 style**/
+.duckwithpen {
+    width:150px;
+    height: auto;
+    background-image: url("../images/duckpen.png");
+}
+
+.section3 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: #FF4500 2px 2px 6px;
+    border-radius: 30px;
+    width: 800px;
+    height: auto;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 600px) {
+    .section3 {
+        width: 90%;
+    }
+    
+}
+
+.section3heading {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px var(--red);
+    color: var(--orange);
+    margin: auto;
+}

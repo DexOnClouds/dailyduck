@@ -28,7 +28,6 @@
   color: var(--yellow);
   font-family: 'myfont', sans-serif;
   border:var(--yellow) 3px solid;
-  border-radius: 30px;
   margin: 15px 0;
   padding: 1px;
   font-size: 1.2rem;
@@ -40,12 +39,25 @@
   justify-content: center;
   align-items: center;
   width: 300px;
+  animation: border-animation 3s ease-in-out infinite;
 }
   #date-time p {
     margin: 2px;
     padding: 5px;
     
   }
+
+  @keyframes border-animation {
+    0% {
+        border-color: var(--yellow);
+    }
+    50% {
+        border-color: var(--red);
+    }
+    100% {
+        border-color: var(--yellow);
+    }
+}
    
   #current-time {
     color: var(--orange);
@@ -206,7 +218,7 @@ main {
     background: var(--gray);
 }
 
-/**section 3 style**/
+/**section 3 style*/
 .duckwithpen {
     width:150px;
     height: auto;
@@ -243,3 +255,13 @@ main {
     color: var(--orange);
     margin: auto;
 }
+
+footer {
+    text-align: center;
+    margin: 30px 0;
+    padding: auto;
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+

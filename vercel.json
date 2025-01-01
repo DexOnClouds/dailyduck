@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/homepage/index.html" },
+    { "src": "/(.+)", "dest": "/$1" }
+  ],
+  "cleanUrls": true
+}
